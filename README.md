@@ -6,7 +6,7 @@
 
 ## Установка через Composer
 
-После добавления репозитория `https://github.com/Omegakontur/site-analytics` в Packagist пакет устанавливается командой.
+После добавления репозитория `https://github.com/dimitriytiho/site-analytics` в Packagist пакет устанавливается командой.
 
 ```sh
 composer require omegakontur/site-analytics:^0.1
