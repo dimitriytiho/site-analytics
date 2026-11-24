@@ -1,5 +1,5 @@
 {
-  "name": "omegakontur/site-analytics",
+  "name": "dimitriytiho/site-analytics",
   "description": "Агрегированные счётчики сайта и отчёты Filament для Laravel",
   "type": "library",
   "require": {

@@ -9,7 +9,7 @@
 После добавления репозитория `https://github.com/dimitriytiho/site-analytics` в Packagist пакет устанавливается командой.
 
 ```sh
-composer require omegakontur/site-analytics:^0.1
+composer require dimitriytiho/site-analytics:^0.1
 php artisan migrate
 ```
 
@@ -24,13 +24,13 @@ php artisan migrate
   "repositories": [{
     "type": "path",
     "url": "packages/site-analytics",
-    "options": {"versions": {"omegakontur/site-analytics": "0.1.0"}}
+    "options": {"versions": {"dimitriytiho/site-analytics": "0.1.1"}}
   }]
 }
 ```
 
 ```sh
-composer require omegakontur/site-analytics:^0.1
+composer require dimitriytiho/site-analytics:^0.1
 php artisan migrate
 ```
 
@@ -90,7 +90,7 @@ Gate::define('view-site-analytics', fn ($user) => $user->can('viewAnalytics'));
 Добавьте шаблоны пакета к источникам Tailwind темы панели.
 
 ```css
-@source '../../../../vendor/omegakontur/site-analytics/resources/views/**/*';
+@source '../../../../vendor/dimitriytiho/site-analytics/resources/views/**/*';
 ```
 
 Путь зависит от расположения файла темы. Соберите фронтенд и тему Filament. Страница отчёта находится в панели по адресу `site-analytics`.
@@ -101,7 +101,7 @@ Gate::define('view-site-analytics', fn ($user) => $user->can('viewAnalytics'));
 
 ```ts
 import { router } from '@inertiajs/react';
-import { trackSiteAnalytics } from '../../vendor/omegakontur/site-analytics/resources/js/track';
+import { trackSiteAnalytics } from '../../vendor/dimitriytiho/site-analytics/resources/js/track';
 
 // В setup() createInertiaApp, в браузере.
 trackSiteAnalytics(router, props.initialPage.props.analyticsPage);
