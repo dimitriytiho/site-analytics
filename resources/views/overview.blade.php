@@ -46,7 +46,7 @@
                 <tbody>
                     @foreach ($pages as $code => $total)
                         <tr class="border-t border-gray-200 dark:border-gray-700">
-                            <td class="py-2 text-start">{{ $labels[$code]['label'] ?? $code }}</td>
+                            <td class="py-2 text-start">{{ __($labels[$code]['label'] ?? $code) }}</td>
                             <td class="py-2 text-end tabular-nums">{{ number_format($total, 0, ',', ' ') }}</td>
                         </tr>
                     @endforeach

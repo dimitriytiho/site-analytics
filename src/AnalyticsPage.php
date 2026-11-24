@@ -44,7 +44,7 @@ class AnalyticsPage extends Page
     protected function getViewData(): array
     {
         abort_unless(static::canAccess(), 403);
-        $events = (array) config('site-analytics.events');
+        $events = array_map(fn (string $label): string => __($label), (array) config('site-analytics.events'));
         $report = new Report($this->period);
 
         return [
